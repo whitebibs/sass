@@ -1,0 +1,27 @@
+div {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div h1 {
+  color: green;
+  -webkit-text-decoration: 2px underline blue;
+          text-decoration: 2px underline blue;
+}
+div section {
+  display: flex;
+  border: 1px solid green;
+  border-left: 0;
+  margin: 4px;
+}
+div section article {
+  border: 1px solid green;
+}
+div section article p {
+  color: blue;
+  text-align: center;
+}
+div section article:nth-last-of-type(odd) p {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
