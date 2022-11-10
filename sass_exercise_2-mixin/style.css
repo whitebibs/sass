@@ -1,0 +1,34 @@
+div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: center;
+}
+div h1 {
+  color: green;
+  -webkit-text-decoration: 2px underline blue;
+          text-decoration: 2px underline blue;
+  text-align: center;
+}
+div section {
+  display: flex;
+  margin: 8px;
+  padding-bottom: 4px;
+}
+div section article {
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+div section article p {
+  text-align: center;
+}
+div section article:nth-last-of-type(odd) {
+  color: red;
+}
+div section:last-child article {
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+  width: 97vw;
+}/*# sourceMappingURL=style.css.map */

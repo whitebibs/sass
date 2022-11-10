@@ -1,0 +1,301 @@
+div h2, div h1 {
+  color: green;
+  -webkit-text-decoration: 0.0625rem underline blue;
+          text-decoration: 0.0625rem underline blue;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  border: 0.0625rem solid red;
+  align-items: center;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+div h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+}
+div section {
+  display: flex;
+  margin: 0.5rem;
+  padding-bottom: calc(0.0625rem + 0.1875rem);
+}
+div section article {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+div section article p {
+  text-align: center;
+}
+div section article:nth-last-of-type(odd) {
+  color: red;
+}
+div section:last-child article {
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 1.5rem;
+  width: 97vw auto;
+}
+div body div section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+}
+
+div[class^=fs-] {
+  height: 2.8125rem;
+  width: 2.8125rem;
+  background-color: rgb(250, 250, 250);
+  color: rgb(13, 12, 14);
+}
+div[class^=fs-]:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+div[class^=fs-]:nth-child(1).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(1).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(1).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+div[class^=fs-]:nth-child(2).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(2).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(2).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+div[class^=fs-]:nth-child(3).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(3).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(3).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+div[class^=fs-]:nth-child(4).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(4).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(4).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+div[class^=fs-]:nth-child(5).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(5).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(5).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+div[class^=fs-]:nth-child(6).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(6).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(6).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+div[class^=fs-]:nth-child(7).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(7).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(7).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+div[class^=fs-]:nth-child(8).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(8).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(8).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+div[class^=fs-]:nth-child(9).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(9).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(9).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(10) {
+  color: red;
+  background-color: blue;
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(10).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(10).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(10).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+div[class^=fs-]:nth-child(11).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(11).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(11).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+div[class^=fs-]:nth-child(12).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(12).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(12).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+div[class^=fs-]:nth-child(13).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(13).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(13).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+div[class^=fs-]:nth-child(14).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(14).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(14).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+div[class^=fs-]:nth-child(15).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(15).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(15).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+div[class^=fs-]:nth-child(16).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(16).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(16).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+div[class^=fs-]:nth-child(17).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(17).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(17).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+div[class^=fs-]:nth-child(18).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(18).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(18).fs-3rem {
+  font-size: 3rem;
+}
+div[class^=fs-]:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+div[class^=fs-]:nth-child(19).fs-1rem {
+  font-size: 1rem;
+}
+div[class^=fs-]:nth-child(19).fs-2rem {
+  font-size: 2rem;
+}
+div[class^=fs-]:nth-child(19).fs-3rem {
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */

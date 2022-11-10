@@ -1,0 +1,60 @@
+@use "functions.scss" as f;
+$first-color: red;
+$second-color: blue;
+$third-color: green;
+$misure: f.rem(1);
+$align: center;
+%text {
+    color: $third-color;
+    text-decoration: $misure underline $second-color;
+    text-align: $align;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    border: $misure solid $first-color;
+    align-items: center;
+    h1 {
+        @extend %text;
+    }
+    h2 {
+        @extend %text;
+        padding: 1rem; /*oppure f.rem(15/20)?*/
+        border: f.rem(1) solid $first-color;
+    }
+
+    /*h1 {
+        color: $third-color;
+        text-decoration: $misure underline $second-color;
+        text-align: $align;
+    }
+    h2 {
+        @extend h1;
+        padding: 1rem;
+        border: f.rem(1)solid $first-color;
+    }Non era piu' veloce fare cosi partendo dal nostro codice?*/
+
+    section {
+        display: flex;
+        margin: f.rem(8);
+        padding-bottom: calc($misure + f.rem(3));
+        @mixin card-info($color, $border-color, $font-size: 1rem) {
+            color: $color;
+            border: $misure solid $border-color;
+            font-size: $font-size;
+        }
+        article {
+            @include card-info($second-color, $third-color);
+            p {
+                text-align: $align;
+            }
+            &:nth-last-of-type(odd) {
+                color: $first-color;
+            }
+        }
+        &:last-child article {
+            @include card-info($third-color, $second-color, f.rem(24));
+            width: 97vw auto;
+        }
+    }
+}

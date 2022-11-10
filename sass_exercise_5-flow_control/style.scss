@@ -1,0 +1,97 @@
+@use "functions.scss"as f;
+$first-color: red;
+$second-color: blue;
+$third-color: green;
+$misure: f.rem(1);
+$align: center;
+$f-size: 1rem,
+2rem,
+3rem;
+@use "sass:color";
+
+%text {
+    color: $third-color;
+    text-decoration: $misure underline $second-color;
+    text-align: $align;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border: $misure solid $first-color;
+    align-items: center;
+    min-width: fit-content;
+
+    h1 {
+        @extend %text;
+    }
+
+    h2 {
+        @extend %text;
+        padding: 1rem;
+        border: f.rem(1) solid $first-color;
+    }
+
+    section {
+        display: flex;
+        margin: f.rem(8);
+        padding-bottom: calc($misure + f.rem(3));
+
+        @mixin card-info($color, $border-color, $font-size: 1rem) {
+            color: $color;
+            border: $misure solid $border-color;
+            font-size: $font-size;
+        }
+
+        article {
+            @include card-info($second-color, $third-color);
+
+            p {
+                text-align: $align;
+            }
+
+            &:nth-last-of-type(odd) {
+                color: $first-color;
+            }
+        }
+
+        &:last-child article {
+            @include card-info($third-color, $second-color, f.rem(24));
+            width: 97vw auto;
+        }
+
+    }
+
+    body div section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+div[class^="fs-"] {
+    height: f.rem(45);
+    width: f.rem(45);
+    background-color: rgb(250, 250, 250);
+    color: rgb(13, 12, 14);
+
+    @for $var from 1 to 20 {
+        &:nth-child(#{$var}) {
+            @if $var==10 {
+                color: $first-color;
+                background-color: $second-color;
+                font-size: f.rem(48);
+            }
+
+            @else {
+                background-color: color.adjust(white, $lightness: - ($var * 5%));
+                color: color.adjust(black, $lightness: + ($var * 5%));
+            }
+
+            @each $value in $size {
+                &.fs-#{$value} {
+                    font-size: $value;
+                }
+            }
+        }
+    }
+}
